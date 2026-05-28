@@ -1,0 +1,192 @@
+/* ═══════════════════════════════════════════
+   P&P TOURS — RESPONSIVE
+   Mobile-first overrides and breakpoints
+═══════════════════════════════════════════ */
+
+/* ── Mobile base (≤480px) ── */
+@media (max-width: 480px) {
+
+  :root {
+    --page-px: 16px;
+    --sp-5: 20px;
+    --sp-6: 26px;
+    --sp-7: 38px;
+  }
+
+  .reel {
+    padding-top: calc(var(--nav-h) + var(--sp-4));
+    padding-bottom: var(--sp-7);
+  }
+
+  /* Typography */
+  .t-h1 { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .t-h2 { font-size: clamp(1.65rem, 7vw, 2.2rem); }
+
+  /* Stats row: stack cleanly */
+  .stats-row { gap: 0; }
+  .stat-item { padding: 0 var(--sp-4); }
+  .stat-value { font-size: 1.85rem; }
+
+  /* Booking form */
+  .booking-form {
+    padding: var(--sp-5) var(--sp-4);
+    border-radius: var(--r-xl);
+  }
+
+  .booking-grid { grid-template-columns: 1fr; }
+
+  /* Calc box */
+  .calc-box { padding: var(--sp-5) var(--sp-4); }
+
+  /* Dashboard */
+  .dashboard { padding: var(--sp-5) var(--sp-4); }
+
+  /* Fleet grid: single column */
+  .fleet-grid { grid-template-columns: 1fr; }
+
+  /* Popup */
+  #followupPopup { padding: var(--sp-5); }
+
+  /* Rating overview */
+  .rating-overview { gap: var(--sp-4); }
+  .rating-score { font-size: 2.4rem; }
+
+  /* WA chat */
+  .wa-bubble { font-size: 0.76rem; }
+
+  /* Location box */
+  .loc-box { padding: var(--sp-4); }
+
+  /* Price compare */
+  .price-compare { padding: var(--sp-5) var(--sp-4); }
+
+  /* Payment */
+  .payment-box { padding: var(--sp-5) var(--sp-4); }
+
+  /* Footer */
+  .footer-links { gap: var(--sp-2); }
+
+  /* Dot nav: hide on very small */
+  .dot-nav { display: none; }
+
+  /* Nav brand tag: hide */
+  .nav-brand-tag { display: none; }
+}
+
+/* ── Tablet (481–768px) ── */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  :root { --page-px: 18px; }
+
+  .t-h1 { font-size: clamp(2.4rem, 7vw, 3.4rem); }
+  .t-h2 { font-size: clamp(1.75rem, 5vw, 2.4rem); }
+
+  .fleet-grid { grid-template-columns: repeat(2, 1fr); }
+  .wcu-grid   { grid-template-columns: repeat(2, 1fr); }
+  .driver-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .dot-nav { right: 0.75rem; }
+}
+
+/* ── Desktop (769px+) ── */
+@media (min-width: 769px) {
+  .sticky-bar { display: none !important; }
+  body { padding-bottom: 0 !important; }
+}
+
+/* ── Large desktop (1024px+) ── */
+@media (min-width: 1024px) {
+  :root {
+    --max-w: 700px;
+    --max-w-wide: 900px;
+  }
+
+  .reel { padding-left: var(--sp-8); padding-right: var(--sp-8); }
+}
+
+/* ── Touch device optimizations ── */
+@media (hover: none) and (pointer: coarse) {
+
+  /* Larger tap targets */
+  .btn    { min-height: 46px; }
+  .nav-link { padding: 0.55rem 0.8rem; }
+  .faq-question { padding: var(--sp-5); min-height: 52px; }
+  .loc-tab { padding: 0.5rem var(--sp-5); min-height: 40px; }
+
+  /* Remove hover effects that don't translate to touch */
+  .card:hover,
+  .fleet-card:hover,
+  .driver-card:hover,
+  .wcy-card:hover,
+  .testi-card:hover,
+  .service-card:hover,
+  .trust-badge:hover,
+  .contact-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border);
+  }
+
+  /* Keep click/tap feedback */
+  .btn:active           { transform: scale(0.96); transition-duration: 0.08s; }
+  .sticky-bar-btn:active { transform: scale(0.94); }
+  .fleet-card-btn:active { transform: scale(0.96); }
+}
+
+/* ── Landscape mobile ── */
+@media (max-height: 600px) and (orientation: landscape) {
+
+  .reel {
+    height: auto;
+    min-height: 100vh;
+    scroll-snap-align: none;
+    overflow-y: auto;
+  }
+
+  .reel-container { scroll-snap-type: none; }
+
+  .car-stage { height: 140px; }
+  .t-h1 { font-size: 2.4rem; }
+
+  .scroll-hint { display: none; }
+}
+
+/* ── Very tall screens (1200px+) ── */
+@media (min-height: 1200px) {
+  .reel {
+    padding-top: calc(var(--nav-h) + var(--sp-9));
+    padding-bottom: var(--sp-9);
+  }
+}
+
+/* ── Print ── */
+@media print {
+  .dot-nav,
+  .sticky-bar,
+  .wa-float,
+  #floatBookBtn,
+  .aria-fab,
+  .aria-panel,
+  #followupPopup,
+  #ppToast,
+  .scroll-hint { display: none !important; }
+
+  body { overflow: auto; height: auto; color: #000; background: #fff; }
+  .reel { height: auto; scroll-snap-align: none; page-break-inside: avoid; }
+  .reel-container { overflow: visible; height: auto; scroll-snap-type: none; }
+
+  .t-h1, .t-h2, .t-h3 { color: #000; }
+  .card { border: 1px solid #ccc; }
+}
+
+/* ── High contrast mode ── */
+@media (forced-colors: active) {
+  .btn-primary,
+  .btn-wa,
+  .booking-submit,
+  .nav-cta,
+  .sticky-bar-call,
+  .sticky-bar-wa {
+    forced-color-adjust: none;
+  }
+}
