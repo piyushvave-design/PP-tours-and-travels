@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Book a Cab | P&P Tours and Travels — Instant WhatsApp Booking</title>
+<meta name="description" content="Book your ride in under 30 seconds. Fill the form, calculate your fare, and confirm instantly via WhatsApp."/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="P&amp;P Tours and Travels"/>
+<meta name="geo.region" content="IN-BR"/>
+<meta name="geo.placename" content="Patna, Bihar, India"/>
+<meta property="og:title" content="Book a Cab | P&P Tours and Travels — Instant WhatsApp Booking"/>
+<meta property="og:description" content="Book your ride in under 30 seconds. Fill the form, calculate your fare, and confirm instantly via WhatsApp."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_IN"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Book a Cab | P&P Tours and Travels — Instant WhatsApp Booking"/>
+<meta name="twitter:description" content="Book your ride in under 30 seconds. Fill the form, calculate your fare, and confirm instantly via WhatsApp."/>
+<link rel="canonical" href="https://pptoursandtravels.in/book.html"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "P&P Tours and Travels",
+  "description": "Car rental and taxi service in Bihar. Serving Patna, Gaya, Bihar Sharif and outstation routes.",
+  "url": "https://pptoursandtravels.in",
+  "telephone": "+917870737475",
+  "email": "meepiyush0035@gmail.com",
+  "address": {"@type": "PostalAddress","addressLocality": "Patna","addressRegion": "Bihar","addressCountry": "IN"},
+  "geo": {"@type": "GeoCoordinates","latitude": 25.5941,"longitude": 85.1376},
+  "areaServed": ["Patna","Gaya","Bihar Sharif","Bihar"],
+  "priceRange": "₹₹",
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6D0TFFYF0Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-6D0TFFYF0Q', { page_title: 'Book a Cab | P&P Tours and Travels — Instant WhatsApp Booking', page_location: window.location.href });
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="has-nav page-flow">
+
+<!-- ══ TOP NAVIGATION BAR ══ -->
+<nav id="topNav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo pp-wordmark" href="index.html">
+    <span class="pp-logo-mark">P<em>&amp;</em>P</span><span class="pp-logo-divider"></span><span class="pp-logo-sub">Tours &amp; Travels<span class="pp-logo-tagline">Bihar's Premium Cab Service</span></span>
+  </a>
+  <div class="nav-links" role="menubar">
+    <a class="nav-link" href="index.html" role="menuitem">Home</a>
+    <a class="nav-link" href="fleet.html" role="menuitem">Fleet</a>
+    <a class="nav-link" href="drivers.html" role="menuitem">Drivers</a>
+    <a class="nav-link" href="reviews.html" role="menuitem">Reviews</a>
+    <a class="nav-link" href="pricing.html" role="menuitem">Pricing</a>
+    <a class="nav-link" href="services.html" role="menuitem">Services</a>
+    <a class="nav-link" href="contact.html" role="menuitem">Contact</a>
+    <a class="nav-cta" href="book.html">Book Now</a>
+  </div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer" role="menu">
+  <a class="nav-link" href="index.html" role="menuitem">🏠 Home</a>
+  <a class="nav-link" href="fleet.html" role="menuitem">🚗 Fleet</a>
+  <a class="nav-link" href="drivers.html" role="menuitem">👨‍✈️ Drivers</a>
+  <a class="nav-link" href="reviews.html" role="menuitem">⭐ Reviews</a>
+  <a class="nav-link" href="pricing.html" role="menuitem">💰 Pricing</a>
+  <a class="nav-link" href="services.html" role="menuitem">🧭 Services</a>
+  <a class="nav-link" href="contact.html" role="menuitem">📞 Contact</a>
+  <a class="nav-cta" href="book.html" role="menuitem">📲 Book Now Instantly</a>
+</div>
+
+<!-- ══ PERSISTENT FLOAT BOOK BUTTON (desktop) ══ -->
+<a id="floatBookBtn" href="book.html" aria-label="Book Now">
+  <svg viewBox="0 0 20 20"><path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm4.472 7.528l-5 5a.75.75 0 01-1.06 0l-2.5-2.5a.75.75 0 011.06-1.06l1.97 1.97 4.47-4.47a.75.75 0 011.06 1.06z"/></svg>
+  Book Now
+</a>
+
+<!-- ══ FOLLOW-UP POPUP ══ -->
+<div id="followupPopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <button class="popup-close" onclick="dismissPopup();" aria-label="Close">✕</button>
+  <div class="popup-icon">🚗</div>
+  <div class="popup-title" id="popupTitle">Still need a cab?</div>
+  <div class="popup-sub" id="popupSub">Complete your booking now — it only takes 30 seconds.</div>
+  <div class="popup-btns">
+    <a class="popup-btn-primary" href="book.html" onclick="dismissPopup();">Complete Booking</a>
+    <a class="popup-btn-wa" href="https://wa.me/917870737475?text=I%20want%20to%20book%20a%20cab" target="_blank" onclick="dismissPopup();">💬 WhatsApp</a>
+  </div>
+  <span class="popup-dismiss" onclick="dismissPopup();">Not right now</span>
+</div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="grid-bg"></div>
+
+<!-- ══ GLOBAL TOAST NOTIFICATION ══ -->
+<div id="ppToast" role="alert" aria-live="polite">
+  <span class="toast-icon" id="toastIcon">✅</span>
+  <span class="toast-msg" id="toastMsg"></span>
+</div>
+
+<div class="reel-container" id="reelContainer">
+<div class="page-header">
+  <span class="section-label anim">Instant Booking</span>
+  <h1 class="section-title anim d1">Book Your Ride Now</h1>
+  <p class="page-sub">Secure booking · Instant confirmation · WhatsApp receipt.</p>
+</div>
+
+<div class="reel" id="slide-3">
+    <div class="reel-inner" style="max-width:680px;">
+      <span class="section-label anim">Instant Booking</span>
+      <h2 class="section-title anim d1">Book Your <em>Ride Now</em></h2>
+
+      <!-- Booking form trust strip -->
+      <div class="bf-trust-strip anim d2">
+        <span class="bf-trust-item">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M8 14.5s5.5-2.75 5.5-6.875V3.75L8 1.5 2.5 3.75v3.875C2.5 11.75 8 14.5 8 14.5z"/></svg>
+          Secure Booking
+        </span>
+        <span class="bf-trust-sep">·</span>
+        <span class="bf-trust-item">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"/></svg>
+          Instant Confirmation
+        </span>
+        <span class="bf-trust-sep">·</span>
+        <span class="bf-trust-item">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-1a1 1 0 00-1 1v.217l7 4.2 7-4.2V4a1 1 0 00-1-1H2zm13 2.383l-5.637 3.382a1 1 0 01-1.046 0L2 5.383V12a1 1 0 001 1h10a1 1 0 001-1V5.383z"/></svg>
+          WhatsApp Receipt
+        </span>
+      </div>
+
+      <div class="booking-form anim d3" style="max-width:660px;">
+
+        <!-- ── TRIP SUMMARY BOX (live update) ── -->
+        <div id="tripSummaryBox" style="
+          display:none;margin-bottom:1.2rem;
+          background:linear-gradient(135deg,rgba(201,168,76,0.07),rgba(26,159,166,0.05));
+          border:1px solid rgba(201,168,76,0.3);border-radius:4px;padding:1rem 1.2rem;
+        ">
+          <div style="font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.7rem;">📋 Trip Summary</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem .9rem;font-size:.8rem;">
+            <div><span style="color:var(--text-muted);">From</span><br/><strong id="ts-pickup" style="color:var(--cream);">—</strong></div>
+            <div><span style="color:var(--text-muted);">To</span><br/><strong id="ts-drop" style="color:var(--cream);">—</strong></div>
+            <div><span style="color:var(--text-muted);">Date &amp; Time</span><br/><strong id="ts-datetime" style="color:var(--cream);">—</strong></div>
+            <div><span style="color:var(--text-muted);">Vehicle</span><br/><strong id="ts-vehicle" style="color:var(--cream);">—</strong></div>
+            <div><span style="color:var(--text-muted);">Trip Type</span><br/><strong id="ts-triptype" style="color:var(--cream);">—</strong></div>
+            <div><span style="color:var(--text-muted);">Distance</span><br/><strong id="ts-distance" style="color:var(--cream);">—</strong></div>
+          </div>
+          <div style="margin-top:.8rem;padding-top:.8rem;border-top:1px solid rgba(201,168,76,0.15);display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);">Estimated Price</span>
+            <span id="ts-price" style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:var(--gold);">₹ —</span>
+          </div>
+          <div id="ts-breakdown" style="font-size:.73rem;color:var(--text-muted);margin-top:.2rem;text-align:right;"></div>
+        </div>
+
+        <!-- ── FORM GRID ── -->
+        <div class="booking-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="form-row">
+            <label for="b-pickup">Pickup Location *</label>
+            <input type="text" id="b-pickup" placeholder="e.g. Patna Junction" autocomplete="off"/>
+            <span class="error-msg" id="err-pickup">Please enter pickup location</span>
+          </div>
+          <div class="form-row">
+            <label for="b-drop">Drop Location *</label>
+            <input type="text" id="b-drop" placeholder="e.g. Gaya Airport" autocomplete="off"/>
+            <span class="error-msg" id="err-drop">Please enter drop location</span>
+          </div>
+          <div class="form-row">
+            <label for="b-datetime">Date &amp; Time *</label>
+            <input type="datetime-local" id="b-datetime"/>
+            <span class="error-msg" id="err-datetime">Please select date &amp; time</span>
+          </div>
+          <div class="form-row">
+            <label for="b-vehicle">Vehicle Type *</label>
+            <select id="b-vehicle">
+              <option value="">Select vehicle</option>
+              <option value="4">4-Seater (Swift Dzire) — ₹15/km</option>
+              <option value="6">6-Seater (Maruti XL6) — ₹16/km</option>
+              <option value="7">7-Seater (Ertiga / Innova) — ₹17/km</option>
+            </select>
+            <span class="error-msg" id="err-vehicle">Please select a vehicle</span>
+          </div>
+          <div class="form-row">
+            <label for="b-triptype">Trip Type *</label>
+            <select id="b-triptype">
+              <option value="">Select trip type</option>
+              <option value="local">Local</option>
+              <option value="outstation">Outstation (+₹500 driver)</option>
+            </select>
+            <span class="error-msg" id="err-triptype">Please select trip type</span>
+          </div>
+          <div class="form-row">
+            <label for="b-distance">Distance (km) *</label>
+            <input type="number" id="b-distance" placeholder="e.g. 120" min="1" step="1" style="background-image:none;padding-right:.9rem;"/>
+            <span class="error-msg" id="err-distance">Enter distance &gt; 0</span>
+          </div>
+          <div class="form-row">
+            <label for="b-name">Your Name *</label>
+            <input type="text" id="b-name" placeholder="Full name" autocomplete="name"/>
+            <span class="error-msg" id="err-name">Please enter your name</span>
+          </div>
+          <div class="form-row">
+            <label for="b-phone">Phone Number *</label>
+            <input type="tel" id="b-phone" placeholder="10-digit mobile number" autocomplete="tel" maxlength="10"/>
+            <span class="error-msg" id="err-phone">Enter valid 10-digit number</span>
+          </div>
+        </div>
+
+        <!-- 30-second booking promise -->
+        <div class="pp-thirty-strip">
+          <span class="pp-thirty-icon">⏱</span>
+          <span>Takes under <strong>30 seconds</strong> — no app, no login needed</span>
+        </div>
+
+        <button class="book-now-btn" id="bookNowBtn" disabled style="opacity:.5;cursor:not-allowed;">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.07.527 4.015 1.453 5.705L0 24l6.453-1.435A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.897 0-3.676-.484-5.23-1.335l-.374-.222-3.88.864.875-3.792-.243-.389A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          <span id="bookBtnLabel">Fill all fields to continue</span>
+        </button>
+
+        <!-- Urgency text -->
+        <p class="booking-urgency">🔴 Limited availability today — book your slot now</p>
+
+        <!-- Trust badges below button -->
+        <div class="booking-trust-badges">
+          <span class="btb-item">✔ Instant confirmation</span>
+          <span class="btb-item">✔ Verified drivers</span>
+          <span class="btb-item">✔ Transparent pricing</span>
+        </div>
+
+        <!-- Call Now option -->
+        <div class="booking-call-row">
+          <span class="bcr-label">Prefer to talk?</span>
+          <a class="bcr-call-btn" href="tel:+917870737475">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Call Now
+          </a>
+          <a class="bcr-wa-btn" href="https://wa.me/917870737475?text=I%20want%20to%20book%20a%20car" target="_blank">
+            <svg viewBox="0 0 24 24" fill="#25d366" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.998 0C5.374 0 0 5.373 0 11.998c0 2.118.554 4.1 1.523 5.822L.057 23.95l6.296-1.645A11.945 11.945 0 0011.998 24c6.626 0 12-5.374 12-12S18.624 0 11.998 0zm0 21.818a9.818 9.818 0 01-5.001-1.366l-.359-.214-3.737.979 1.001-3.638-.234-.374A9.82 9.82 0 012.18 12c0-5.421 4.41-9.818 9.818-9.818 5.421 0 9.818 4.397 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <p>✅ Details saved! Opening WhatsApp…</p>
+          <p style="font-size:.75rem;color:var(--text-muted);">Your booking has been saved. If WhatsApp doesn't open, call us directly.</p>
+        </div>
+        <div id="driverBadge">
+          👨‍✈️ Assigned Driver: <strong id="assignedDriverName">—</strong>
+          <span class="booking-id-tag" id="bookingIdTag">#—</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+<div class="reel" id="slide-4">
+    <div class="reel-inner">
+      <span class="section-label anim">Pricing Tool</span>
+      <h2 class="section-title anim d1">Estimate Your <em>Fare</em></h2>
+      <div class="calculator anim d2">
+        <div class="form-grid">
+          <div class="form-row"><label for="seater">Vehicle Type</label><select id="seater"><option value="4">4-Seater</option><option value="6">6-Seater</option><option value="7">7-Seater (Innova)</option></select></div>
+          <div class="form-row"><label for="trip">Trip Type</label><select id="trip"><option value="local">Local</option><option value="outstation">Outstation</option></select></div>
+          <div class="form-row full"><label for="distance">Distance (km)</label><input type="number" id="distance" placeholder="Enter km" min="1" step="1"/></div>
+        </div>
+        <button class="calc-btn" id="fare-btn">Calculate Fare →</button>
+        <div class="result">
+          <div class="result-label">Estimated Fare</div>
+          <div class="result-amount" id="amount">—</div>
+          <div class="result-breakdown" id="breakdown">Enter distance and press Calculate</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+<div class="reel" id="slide-5">
+    <div class="reel-inner">
+      <span class="section-label anim">Daily Rental Tool</span>
+      <h2 class="section-title anim d1">Daily Rental <em>Estimator</em></h2>
+      <div class="calculator anim d2">
+        <div class="pills"><div class="pill-gold">🚗 Car — ₹100/day</div><div class="pill-teal">👤 Driver — ₹500/day</div></div>
+        <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.6;">All rentals include a professional driver.</p>
+        <div class="form-row"><label for="d-days">Number of Days</label><input type="number" id="d-days" placeholder="e.g. 3" min="1" step="1"/></div>
+        <button class="calc-btn" id="daily-btn" style="margin-top:1rem;">Calculate Total Cost →</button>
+        <div class="result">
+          <div class="result-label">Estimated Rental Cost</div>
+          <div class="result-amount" id="daily-amount">—</div>
+          <div id="daily-breakdown" style="margin-top:.5rem;font-size:.78rem;color:#8a8070;">Enter days and press Calculate</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+<div class="reel" id="slide-6">
+    <div class="reel-inner">
+      <span class="section-label anim">Trip Summary</span>
+      <h2 class="section-title anim d1">Cost <em>Dashboard</em></h2>
+      <div class="dashboard ascale d2">
+        <div class="dash-row">
+          <div class="dash-label">🚗 Fare Calculator<span id="dash-fare-meta">—</span></div>
+          <div class="dash-value pending" id="dash-fare-val">Not calculated</div>
+        </div>
+        <div class="dash-row">
+          <div class="dash-label">📅 Daily Rental<span id="dash-daily-meta">—</span></div>
+          <div class="dash-value pending" id="dash-daily-val">Not calculated</div>
+        </div>
+        <div class="dash-total-row">
+          <div class="dash-total-label">Grand Total</div>
+          <div class="dash-total-value" id="dash-grand-total">₹ —</div>
+        </div>
+      </div>
+      <p class="anim d3" style="font-size:.78rem;color:var(--text-muted);margin-top:1rem;">Calculate fare &amp; daily rental above — grand total updates here automatically.</p>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+<div class="reel" id="slide-19">
+    <div class="reel-inner">
+      <span class="section-label anim">Hassle-Free Payments</span>
+      <h2 class="section-title anim d1">Pay Your <em>Way, Safely</em></h2>
+      <div class="payment-trust-box anim d2">
+        <div style="text-align:center;margin-bottom:1rem;">
+          <span style="font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);">Accepted Payment Methods</span>
+        </div>
+        <div class="payment-upi-row">
+          <div class="upi-icon">
+            <div class="upi-icon-logo">🟢</div>
+            <div class="upi-icon-name">GPay</div>
+          </div>
+          <div class="upi-icon">
+            <div class="upi-icon-logo">🟣</div>
+            <div class="upi-icon-name">PhonePe</div>
+          </div>
+          <div class="upi-icon">
+            <div class="upi-icon-logo">🔵</div>
+            <div class="upi-icon-name">Paytm</div>
+          </div>
+          <div class="upi-icon">
+            <div class="upi-icon-logo">💵</div>
+            <div class="upi-icon-name">Cash</div>
+          </div>
+          <div class="upi-icon">
+            <div class="upi-icon-logo">📱</div>
+            <div class="upi-icon-name">Any UPI</div>
+          </div>
+        </div>
+        <div class="payment-divider"></div>
+        <div class="payment-trust-row">
+          <div class="payment-trust-item"><span>🔒</span> 100% Secure Payments</div>
+          <div class="payment-trust-item"><span>🤝</span> Pay After Ride Available</div>
+          <div class="payment-trust-item"><span>🚫</span> No Advance Required</div>
+          <div class="payment-trust-item"><span>📄</span> Receipt Provided</div>
+        </div>
+      </div>
+      <p class="anim d3" style="font-size:.76rem;color:var(--text-muted);margin-top:.9rem;text-align:center;line-height:1.7;">No booking fee, no advance payment required. Pay after your ride is completed — we operate on trust.</p>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+<div class="reel" id="slide-23" aria-label="Cancellation policy">
+    <div class="reel-inner">
+      <span class="section-label anim">Book With Confidence</span>
+      <h2 class="section-title anim d1">Cancellation &amp; <em>Refund Policy</em></h2>
+      <div class="cancel-box anim d2">
+        <div class="cancel-timeline">
+
+          <div class="cancel-item">
+            <div class="cancel-dot green">✅</div>
+            <div class="cancel-content">
+              <div class="cancel-time">More than 12 hours before pickup</div>
+              <div class="cancel-rule">100% Free Cancellation</div>
+              <div class="cancel-sub">No questions asked. Full amount refunded if any advance was paid.</div>
+            </div>
+          </div>
+
+          <div class="cancel-item">
+            <div class="cancel-dot yellow">⚠️</div>
+            <div class="cancel-content">
+              <div class="cancel-time">6–12 hours before pickup</div>
+              <div class="cancel-rule">50% Cancellation Fee May Apply</div>
+              <div class="cancel-sub">Driver has been allocated. Partial charges apply to cover driver standby cost.</div>
+            </div>
+          </div>
+
+          <div class="cancel-item">
+            <div class="cancel-dot red">❌</div>
+            <div class="cancel-content">
+              <div class="cancel-time">Less than 6 hours or no-show</div>
+              <div class="cancel-rule">Nominal Cancellation Fee Applies</div>
+              <div class="cancel-sub">Driver is already en-route. Fee covers driver travel + waiting time.</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="cancel-note">
+          💡 <strong style="color:var(--cream);">How to cancel:</strong> Simply WhatsApp us at <a href="https://wa.me/917870737475" target="_blank" style="color:var(--teal);text-decoration:none;">+91 78707 37475</a> with your booking details. We'll process it immediately, no forms needed. Refunds (if any) are returned to the original payment method within 24–48 hours.
+        </div>
+      </div>
+      <div class="anim d3" style="margin-top:.9rem;display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" onclick="window.location.href='book.html'" style="font-size:.8rem;">Book Now →</button>
+        <a class="btn-outline" href="https://wa.me/917870737475?text=I%20want%20to%20cancel%20my%20booking" target="_blank" style="font-size:.8rem;">Cancel via WhatsApp</a>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>SCROLL</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+  </div>
+
+</div>
+
+<footer class="site-footer anim d3" style="position:relative;max-width:900px;margin:2rem auto 0;">
+  <div class="site-footer-logo">🚗 <strong>P&amp;P</strong> <span>Tours &amp; Travels</span></div>
+  <div class="site-footer-tagline">Reliable Car Rental across Bihar · Est. 2019</div>
+  <div class="site-footer-links">
+    <a href="index.html" style="color:inherit;text-decoration:none;">Home</a>
+    <span class="site-footer-dot">·</span>
+    <a href="fleet.html" style="color:inherit;text-decoration:none;">Fleet</a>
+    <span class="site-footer-dot">·</span>
+    <a href="book.html" style="color:inherit;text-decoration:none;">Book Now</a>
+    <span class="site-footer-dot">·</span>
+    <a href="services.html" style="color:inherit;text-decoration:none;">FAQ</a>
+  </div>
+  <div class="site-footer-copy">© 2025 P&amp;P Tours and Travels · Made with ♥ by <a href="https://instagram.com/piyush.wave" target="_blank">@piyush.wave</a></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/917870737475?text=I%20want%20to%20book%20a%20car" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.07.527 4.015 1.453 5.705L0 24l6.453-1.435A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.897 0-3.676-.484-5.23-1.335l-.374-.222-3.88.864.875-3.792-.243-.389A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  <span class="wa-tooltip">Book on WhatsApp</span>
+</a>
+
+<!-- FAB Button -->
+<button class="aria-fab" id="ariaFab" aria-label="Open booking assistant">
+  <div class="notif" id="ariaNot"></div>
+  <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- concierge bell icon -->
+    <circle cx="14" cy="6" r="2.2" fill="#0b0c10"/>
+    <path d="M6 20 Q6 11 14 11 Q22 11 22 20 Z" fill="#0b0c10"/>
+    <rect x="4.5" y="19.5" width="19" height="2.5" rx="1.25" fill="#0b0c10"/>
+    <line x1="14" y1="8.2" x2="14" y2="11" stroke="#0b0c10" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<!-- Chat Panel -->
+<div class="aria-panel" id="ariaPanel">
+
+  <!-- Header -->
+  <div class="aria-header">
+    <div class="aria-avatar">
+      <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cap -->
+        <rect x="7" y="10" width="16" height="3.5" rx="1.75" fill="#c9a84c"/>
+        <rect x="5.5" y="12.5" width="19" height="1.5" rx=".75" fill="#e8c96e"/>
+        <!-- Head -->
+        <circle cx="15" cy="17" r="5.5" fill="#d4a574"/>
+        <!-- Face details -->
+        <ellipse cx="13.2" cy="16.5" rx=".7" ry=".8" fill="#0b0c10"/>
+        <ellipse cx="16.8" cy="16.5" rx=".7" ry=".8" fill="#0b0c10"/>
+        <path d="M13 19 Q15 20.5 17 19" stroke="#0b0c10" stroke-width=".8" stroke-linecap="round" fill="none"/>
+        <!-- Collar -->
+        <path d="M9.5 22.5 Q15 25 20.5 22.5 L19 27 L15 25.5 L11 27 Z" fill="#1e1f24"/>
+        <path d="M15 22.5 L13 25 L15 24 L17 25 Z" fill="#c9a84c"/>
+      </svg>
+    </div>
+    <div class="aria-info">
+      <div class="aria-name">Aria</div>
+      <div class="aria-status">P&amp;P Booking Assistant</div>
+    </div>
+    <button class="aria-close" id="ariaClose">✕</button>
+  </div>
+
+  <!-- Progress -->
+  <div class="aria-progress"><div class="aria-progress-fill" id="ariaProgress"></div></div>
+
+  <!-- Messages -->
+  <div class="aria-body" id="ariaBody"></div>
+
+  <!-- Dynamic bottom zone (options / input / cta) -->
+  <div id="ariaBottom"></div>
+
+</div>
+
+<!-- ADDED: Sticky Mobile CTA Bar -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="sticky-cta-call" href="tel:+917870737475" onclick="trackClick('sticky_call')">📞 Call Now</a>
+  <a class="sticky-cta-wa" href="https://wa.me/917870737475?text=I%20want%20to%20book%20a%20car" target="_blank" onclick="trackClick('sticky_whatsapp')">💬 WhatsApp</a>
+  <button class="sticky-cta-book" onclick="window.location.href='book.html';trackClick('sticky_book');">🚗 Book Now</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VISUAL POLISH & ANIMATION ENHANCEMENT LAYER
+     Injected purely as additive CSS + lightweight JS.
+     Zero changes to booking, WA, analytics, or Sheets logic.
+═══════════════════════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════
+     WHATSAPP STICKY BAR — TARGETED BUG FIXES
+     Bug 1: .aria-fab overlaps sticky bar on mobile
+     Bug 2: keyboard open pushes bar into form fields
+     Bug 3: ppStickyIn animation can leave bar hidden
+     Bug 4: z-index war buries sticky bar
+═══════════════════════════════════════════════ -->
+
+<!-- ══ PREMIUM UI v5 — micro-patch JS ══ -->
+
+<!-- ══ PREMIUM UI v4 — Scroll Reveal & Micro-interaction JS ══ -->
+
+<!-- ══ P&P BRAND POLISH JS ══ -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>
