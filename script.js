@@ -2079,11 +2079,6 @@ function dismissPopup(){
       entries.forEach(function (entry) {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
           animateIn(entry.target);
-          /* Update dot nav active state */
-          var idx = entry.target.id.replace('slide-', '');
-          document.querySelectorAll('.dot').forEach(function (d) {
-            d.classList.toggle('active', d.getAttribute('data-slide') === idx);
-          });
         }
       });
     },
